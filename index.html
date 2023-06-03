@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chitralahari</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="player-container">
@@ -18,15 +19,18 @@
         <audio src ="songss/Na Roja Nuvve(1).mp3 Roja Nuvve(1).mp3"></audio>
         <!--Progress-->
         <div class="progress-container">
-            <span id="Starting-time">0:00</span>
-            <span id="Duration">4:02</span>
-            <div id="progress"></div>
+            <div id="progress" class-="progress"></div>
+            <div class ="duration-wrapper">
+                <span id="Starting-time">0:00</span>
+                <span id="Duration">4:02</span>
+            </div>
+            
         </div>
         
         <div class="player-controls">
-            <i class="fa-solid fa-backward" id="prev" title="prev"></i>
-            <i class="fa-solid fa-play"></i>
-            <i class="fa-solid fa-forward"></i>
+            <i class="fa-solid fa-backward" id="prev" title ="prev"></i>
+            <i class="fa-solid fa-play" id="play" title="play"></i>
+            <i class="fa-solid fa-forward" id="next" title="next"></i>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/da12d51049.js" crossorigin="anonymous"></script>

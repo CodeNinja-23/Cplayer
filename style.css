@@ -1,0 +1,127 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins&display=swap');
+body{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+
+
+.player-container{
+    height: 560px;
+    width: 400px;
+    background-color: #e7e7e7;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px 5px rgba(0,0,0,0.3);
+}
+.image-container{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: -50px;
+    left: 50px;
+}
+/* songs */
+.image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 20px;
+    box-shadow: 0 15px 30px 5px rgba(0,0,0,0.3);
+
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+
+}
+
+h3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400 ;
+    margin: 5px 0 0;
+}
+
+/* progress */
+.progress-container{
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px 20px;
+    height: 4px;
+    width: 90%;
+
+}
+
+.progress{
+    background: #242323;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+
+}
+.duration-wrapper{
+    position: relative;
+    top:-25px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* Controls */
+
+.player-controls{
+    position: relative;
+    top: -15px;
+    left: 120px;
+    width: 200px;
+
+
+}
+.fa-solid{
+    font-size: 30px;
+    color: rgb(129,129,129);
+    margin-right: 30px;
+    cursor: pointer;
+}
+.fa-solid:hover{
+    filter: brightness(10%);
+
+}
+
+.fa-play{
+    font-size: 40px;
+    position: relative;
+    top:3px
+}
+
+/* MEdia Q */
+@media screen and (max-width: 376px)
+{
+    .player-conatiner{
+        width: 95vw;
+    }
+    .image-container{
+        left: 29px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .player-controls{
+        top:-10px;
+        left:100px;
+    }
+}
