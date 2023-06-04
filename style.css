@@ -2,14 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins&display=swap');
 body{
+    scroll-behavior: auto;
     font-family: 'Poppins',sans-serif;
-    margin: 0;
+    position: relative;
+    
     height: 100vh;
-    background-image: url(imgs/white-abstract-background_23-2148810113.avif);
+    background-image: url(imgs/muzik.webp);
+    background-size: 100%;
+    min-height: 100vh;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 15px;
+    
   }
 
 nav{
@@ -26,11 +32,17 @@ nav{
     
 
 }
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+}
 .logo_container img{
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-    object-fit: cover;
+    height: 90px;
+    width: 190px;
+    border-radius: 49%;
+    
+
+    
     
 
     
@@ -39,12 +51,13 @@ nav{
  
 
 .player-container{
-    
+    position: relative;
     height: 560px;
     width: 400px;
     background-color: #e7e7e7;
     border-radius: 20px;
     box-shadow: 0 15px 30px 5px rgba(0,0,0,0.3);
+    
 }
 .image-container{
     height: 300px;
@@ -131,6 +144,50 @@ h3{
     position: relative;
     top:3px
 }
+.footer{
+
+    margin-top: 900px;
+    text-align: center;
+    justify-content: center;
+    
+ 
+  }
+.footer{
+    background-color: #d19191;
+    color: #fff;
+    padding:20px;
+    position: absolute;
+    
+    width:100%;
+    margin: top 1000px;
+    
+    border-radius: 20px;
+}
+  .footer a{
+    text-decoration: none;
+    color:#fff;
+
+    font-size:22px;
+    margin: 0 10px;
+  }
+  .footer a:hover{
+    opacity: 0.1;
+    transition: 0.1s ease-in-out;
+
+  }
+  .footer hr{
+    background: #999;
+    height: 1px;
+    width: 90%;
+    border:0;
+    margin: 1px;
+    margin-left: 30px;
+ 
+  }
+  .footer p{
+    padding-bottom: 1px;
+  }
+
 
 /* MEdia Q */
 @media screen and (max-width: 376px)
